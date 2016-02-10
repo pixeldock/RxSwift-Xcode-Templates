@@ -22,8 +22,12 @@ In most cases the ViewModel uses other helper objects (like DataStore classes) t
 # How to use it:
 
 1. Download the *RxSwift* folder and add it to the following folder on your machine: `~/Library/Developer/Xcode/Templates`
+
 2. When you want to add a new scene to your app, open the *New File* dialog and choose *RxSwift* in the left column
+
 3. Select *Scene* and click *Next*
+
 4. Enter a name for the Scene. As you can see that name will be used as a prefix for all the 4 classes that will be needed for the scene (see above)
+
 5. Click *Next* and save the scene. Xcode now creates the 4 classes needed for the scene.
 
