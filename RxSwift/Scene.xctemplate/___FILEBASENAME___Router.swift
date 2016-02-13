@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___Wireframe {
+class ___FILEBASENAMEASIDENTIFIER___Router {
     weak var viewController: ___FILEBASENAMEASIDENTIFIER___ViewController?
     
     func navigateToSomewhere() {

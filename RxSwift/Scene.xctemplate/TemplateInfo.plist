@@ -5,7 +5,7 @@
 	<key>DefaultCompletionName</key>
 	<string>Scene</string>
 	<key>Description</key>
-	<string>A scene with view controller, view model, wireframe and builder</string>
+	<string>A scene with view controller, view model, router and builder</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
@@ -48,13 +48,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Wireframe</string>
+			<string>___VARIABLE_sceneName:identifier___Router</string>
 			<key>Description</key>
-			<string>The wireframe name</string>
+			<string>The router name</string>
 			<key>Identifier</key>
-			<string>wireframeName</string>
+			<string>routerName</string>
 			<key>Name</key>
-			<string>Wireframe Name:</string>
+			<string>Router Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -68,7 +68,7 @@
 			<key>Identifier</key>
 			<string>viewControllerName</string>
 			<key>Name</key>
-			<string>ViewController Name:</string>
+			<string>View Controller Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -82,7 +82,7 @@
 			<key>Identifier</key>
 			<string>viewModelName</string>
 			<key>Name</key>
-			<string>ViewModel Name:</string>
+			<string>View Model Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -96,6 +96,6 @@
 	<key>SortOrder</key>
 	<string>10</string>
 	<key>Summary</key>
-	<string>A scene with view controller, view model, wireframe and builder</string>
+	<string>A scene with view controller, view model, router and builder</string>
 </dict>
 </plist>

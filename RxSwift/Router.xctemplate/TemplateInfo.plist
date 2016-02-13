@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>Wireframe</string>
+	<string>Router</string>
 	<key>Description</key>
-	<string>The wireframe that handles routing for a scene</string>
+	<string>The router that handles navigation for a scene</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
 	<array>
 		<dict>
 			<key>Description</key>
-			<string>The name of the scene that the wireframe belongs to</string>
+			<string>The name of the scene that the router belongs to</string>
 			<key>Identifier</key>
 			<string>sceneName</string>
 			<key>Name</key>
@@ -34,13 +34,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Wireframe</string>
+			<string>___VARIABLE_sceneName:identifier___Router</string>
 			<key>Description</key>
-			<string>The wireframe name</string>
+			<string>The router name</string>
 			<key>Identifier</key>
-			<string>wireframeName</string>
+			<string>routerName</string>
 			<key>Name</key>
-			<string>Wireframe Name:</string>
+			<string>Router Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -54,6 +54,6 @@
 	<key>SortOrder</key>
 	<string>3</string>
 	<key>Summary</key>
-	<string>The wireframe that handles routing for a scene</string>
+	<string>The router that handles navigation for a scene</string>
 </dict>
 </plist>

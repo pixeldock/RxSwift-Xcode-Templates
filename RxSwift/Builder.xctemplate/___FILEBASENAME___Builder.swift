@@ -13,9 +13,9 @@ struct ___FILEBASENAMEASIDENTIFIER___Builder {
     static func viewController() -> UIViewController {
         let dataStore = ___FILEBASENAMEASIDENTIFIER___DataStore()
         let viewModel = ___FILEBASENAMEASIDENTIFIER___ViewModel(withDataStore: dataStore)
-        let wireframe = ___FILEBASENAMEASIDENTIFIER___Wireframe()
-        let viewController = ___FILEBASENAMEASIDENTIFIER___ViewController(withViewModel: viewModel, wireframe: wireframe)
-        wireframe.viewController = viewController
+        let router = ___FILEBASENAMEASIDENTIFIER___Router()
+        let viewController = ___FILEBASENAMEASIDENTIFIER___ViewController(withViewModel: viewModel, router: router)
+        router.viewController = viewController
         
         return viewController
     }

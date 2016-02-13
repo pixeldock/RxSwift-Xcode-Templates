@@ -13,12 +13,12 @@ import RxViewModel
 
 class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     private let viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel
-    private let wireframe: ___FILEBASENAMEASIDENTIFIER___Wireframe
+    private let router: ___FILEBASENAMEASIDENTIFIER___Router
     private let disposeBag = DisposeBag()
     
-    init(withViewModel viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel, wireframe: ___FILEBASENAMEASIDENTIFIER___Wireframe) {
+    init(withViewModel viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel, router: ___FILEBASENAMEASIDENTIFIER___Router) {
         self.viewModel = viewModel
-        self.wireframe = wireframe
+        self.router = router
         super.init(nibName: nil, bundle: nil)
     }
     
