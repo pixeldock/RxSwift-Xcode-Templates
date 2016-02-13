@@ -15,7 +15,7 @@ Each Scene consists of the following elements:
 
 3.  A **Router** (that takes care of routing to another scene)
 
-4.  A **Builder** (that initializes and connects the Wireframe, ViewModel and ViewController and returns the ViewController)
+4.  A **Builder** (that initializes and connects the Router, ViewModel and ViewController and returns the ViewController)
 
 In most cases the ViewModel uses other helper objects (e.g. an APIClient) to access and mutate the model or download data but those might be shared by multiple Scenes so I don't consider them part of a scene.
 
