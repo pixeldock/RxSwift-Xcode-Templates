@@ -10,10 +10,10 @@ import RxSwift
 import RxViewModel
 
 enum ___FILEBASENAMEASIDENTIFIER___Command {
-    case command1
+    case aCommand
 }
 
-enum ___FILEBASENAMEASIDENTIFIER___Result {
+enum ___FILEBASENAMEASIDENTIFIER___CommandResponse {
     case Success
     case Error(message: String)
 }
@@ -21,23 +21,23 @@ enum ___FILEBASENAMEASIDENTIFIER___Result {
 class ___FILEBASENAMEASIDENTIFIER___ViewModel: RxViewModel {
     
     // input
-    var command = PublishSubject<___FILEBASENAMEASIDENTIFIER___Command>()
+    var commandInput = PublishSubject<___FILEBASENAMEASIDENTIFIER___Command>()
     
     // output
-    var result: Observable<___FILEBASENAMEASIDENTIFIER___Result> = Observable.never()
+    var commandOutput: Observable<___FILEBASENAMEASIDENTIFIER___CommandResponse> = Observable.never()
     
     // private
-    private let dataStore: ___FILEBASENAMEASIDENTIFIER___DataStore
+    private let apiClient: ___FILEBASENAMEASIDENTIFIER___APIClient
     
-    init(withDataStore dataStore: ___FILEBASENAMEASIDENTIFIER___DataStore) {
-        self.dataStore = dataStore
+    init(withAPIClient apiClient: ___FILEBASENAMEASIDENTIFIER___APIClient) {
+        self.apiClient = apiClient
         super.init()
-        setupBindings()
+        setupTransformationChains()
     }
     
-    func setupBindings() {
-        result = command
-            .map({ (theCommand) -> ___FILEBASENAMEASIDENTIFIER___Result in
+    func setupTransformationChains() {
+        commandOutput = commandInput
+            .map({ (command) -> ___FILEBASENAMEASIDENTIFIER___CommandResponse in
                 // do what you have to do
                 return .Success
             })
