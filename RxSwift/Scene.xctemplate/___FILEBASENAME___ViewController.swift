@@ -31,7 +31,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
         
         setupViews()
         setupLayout()
-        setupBindings()
+        setupRx()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -44,6 +44,8 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
         viewModel.active = false
     }
     
+    //MARK: Setup
+    
     func setupViews() {
         view.backgroundColor = UIColor.whiteColor()
         
@@ -53,7 +55,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     
     }
     
-    func setupBindings() {
+    func setupRx() {
     
     }
 }

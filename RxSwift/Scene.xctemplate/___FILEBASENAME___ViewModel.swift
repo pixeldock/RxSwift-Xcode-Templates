@@ -32,10 +32,12 @@ class ___FILEBASENAMEASIDENTIFIER___ViewModel: RxViewModel {
     init(withAPIClient apiClient: ___FILEBASENAMEASIDENTIFIER___APIClient) {
         self.apiClient = apiClient
         super.init()
-        setupTransformationChains()
+        setupRx()
     }
     
-    func setupTransformationChains() {
+    //MARK: Setup
+    
+    func setupRx() {
         commandOutput = commandInput
             .map({ (command) -> ___FILEBASENAMEASIDENTIFIER___CommandResponse in
                 // do what you have to do
