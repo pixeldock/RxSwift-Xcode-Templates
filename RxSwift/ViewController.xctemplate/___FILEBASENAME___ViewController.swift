@@ -33,18 +33,9 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
         setupRx()
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
-    }
-    
     //MARK: Setup
     
     func setupViews() {
-        view.backgroundColor = UIColor.whiteColor()
         
     }
     

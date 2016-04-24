@@ -8,22 +8,11 @@
 
 import RxSwift
 
-enum ___FILEBASENAMEASIDENTIFIER___Command {
-    case aCommand
-}
-
-enum ___FILEBASENAMEASIDENTIFIER___CommandResponse {
-    case Success
-    case Error(message: String)
-}
-
 class ___FILEBASENAMEASIDENTIFIER___ViewModel {
     
     // input
-    var commandInput = PublishSubject<___FILEBASENAMEASIDENTIFIER___Command>()
     
     // output
-    var commandOutput: Observable<___FILEBASENAMEASIDENTIFIER___CommandResponse> = Observable.never()
     
     // private
     private let apiClient: ___FILEBASENAMEASIDENTIFIER___APIClient
@@ -37,10 +26,6 @@ class ___FILEBASENAMEASIDENTIFIER___ViewModel {
     //MARK: Setup
     
     func setupRx() {
-        commandOutput = commandInput
-            .map({ (command) -> ___FILEBASENAMEASIDENTIFIER___CommandResponse in
-                // do what you have to do
-                return .Success
-            })
+        
     }
 }
