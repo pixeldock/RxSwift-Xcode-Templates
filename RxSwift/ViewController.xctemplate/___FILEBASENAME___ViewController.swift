@@ -9,7 +9,6 @@
 import UIKit
 import RxSwift
 import RxCocoa
-import RxViewModel
 
 class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     private let viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel
@@ -36,12 +35,10 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        viewModel.active = true
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        viewModel.active = false
     }
     
     //MARK: Setup

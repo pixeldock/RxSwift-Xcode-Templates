@@ -7,7 +7,6 @@
 //
 
 import RxSwift
-import RxViewModel
 
 enum ___FILEBASENAMEASIDENTIFIER___Command {
     case aCommand
@@ -18,7 +17,7 @@ enum ___FILEBASENAMEASIDENTIFIER___CommandResponse {
     case Error(message: String)
 }
 
-class ___FILEBASENAMEASIDENTIFIER___ViewModel: RxViewModel {
+class ___FILEBASENAMEASIDENTIFIER___ViewModel {
     
     // input
     var commandInput = PublishSubject<___FILEBASENAMEASIDENTIFIER___Command>()
