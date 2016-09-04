@@ -11,8 +11,7 @@ import UIKit
 struct ___FILEBASENAMEASIDENTIFIER___Builder {
     
     static func viewController() -> UIViewController {
-        let apiClient = ___FILEBASENAMEASIDENTIFIER___APIClient()
-        let viewModel = ___FILEBASENAMEASIDENTIFIER___ViewModel(withAPIClient: apiClient)
+        let viewModel = ___FILEBASENAMEASIDENTIFIER___ViewModel()
         let router = ___FILEBASENAMEASIDENTIFIER___Router()
         let viewController = ___FILEBASENAMEASIDENTIFIER___ViewController(withViewModel: viewModel, router: router)
         router.viewController = viewController
