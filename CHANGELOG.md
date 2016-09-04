@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 
 --
 
+## [0.3.0](https://github.com/pixeldock/RxSwift-Xcode-Templates/releases/tag/v0.3.0)
+_Released on 2016-09-04._
+
+### Removed
+* scene specific apiClient
+* call to super in ViewModel's init method (there is no super ;-))
+
 ## [0.2.0](https://github.com/pixeldock/RxSwift-Xcode-Templates/releases/tag/v0.2.0)
 _Released on 2015-04-24._
 
