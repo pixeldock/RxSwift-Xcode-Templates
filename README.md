@@ -24,7 +24,7 @@ In most cases the ViewModel uses other helper objects (e.g. an APIClient) to acc
 
 # How to use it:
 
-1. Download the *RxSwift* folder and add it to the following folder on your machine: `~/Library/Developer/Xcode/Templates`
+1. Download the *RxSwift* folder and add it to the following folder on your machine: `~/Library/Developer/Xcode/Templates` (You might need to create that folder if does not exist yet)
 
 2. When you want to add a new scene to your app, open the *New File* dialog and choose *RxSwift* in the left column
 
