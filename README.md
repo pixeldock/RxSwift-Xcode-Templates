@@ -32,5 +32,5 @@ In most cases the ViewModel uses other helper objects (e.g. an APIClient) to acc
 
 4. Enter a name for the Scene. As you can see that name will be used as a prefix for all the 4 classes that will be needed for the scene (see above)
 
-5. Click *Next* and save the scene. Xcode now creates the 4 classes needed for the scene. You will get 2 compile errors, because you still have to create the APIClient that the ViewModel references.
+5. Click *Next* and save the scene. Xcode now creates the 4 classes needed for the scene.
 
