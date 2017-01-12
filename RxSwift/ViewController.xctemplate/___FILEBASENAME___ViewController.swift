@@ -11,9 +11,9 @@ import RxSwift
 import RxCocoa
 
 class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
-    private let viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel
-    private let router: ___FILEBASENAMEASIDENTIFIER___Router
-    private let disposeBag = DisposeBag()
+    fileprivate let viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel
+    fileprivate let router: ___FILEBASENAMEASIDENTIFIER___Router
+    fileprivate let disposeBag = DisposeBag()
     
     init(withViewModel viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel, router: ___FILEBASENAMEASIDENTIFIER___Router) {
         self.viewModel = viewModel
