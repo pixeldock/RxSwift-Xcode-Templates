@@ -33,7 +33,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
         setupRx()
     }
     
-    //MARK: Setup
+    // MARK: Setup
     
     func setupViews() {
         

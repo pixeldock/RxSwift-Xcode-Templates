@@ -20,7 +20,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewModel {
         setupRx()
     }
     
-    //MARK: Setup
+    // MARK: Setup
     
     func setupRx() {
         
