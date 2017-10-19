@@ -8,14 +8,14 @@
 
 import UIKit
 
-struct ___FILEBASENAMEASIDENTIFIER___Builder {
-    
+struct ___VARIABLE_sceneName___Builder {
+
     static func viewController() -> UIViewController {
-        let viewModel = ___FILEBASENAMEASIDENTIFIER___ViewModel()
-        let router = ___FILEBASENAMEASIDENTIFIER___Router()
-        let viewController = ___FILEBASENAMEASIDENTIFIER___ViewController(withViewModel: viewModel, router: router)
+        let viewModel = ___VARIABLE_sceneName___ViewModel()
+        let router = ___VARIABLE_sceneName___Router()
+        let viewController = ___VARIABLE_sceneName___ViewController(withViewModel: viewModel, router: router)
         router.viewController = viewController
-        
+
         return viewController
     }
 }
