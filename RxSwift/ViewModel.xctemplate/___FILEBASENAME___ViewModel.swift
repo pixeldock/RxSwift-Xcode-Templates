@@ -8,21 +8,21 @@
 
 import RxSwift
 
-class ___FILEBASENAMEASIDENTIFIER___ViewModel {
-    
+class ___VARIABLE_sceneName___ViewModel {
+
     // input
-    
+
     // output
-    
+
     // private
-    
+
     init() {
         setupRx()
     }
-    
+
     // MARK: Setup
-    
+
     func setupRx() {
-        
+
     }
 }
