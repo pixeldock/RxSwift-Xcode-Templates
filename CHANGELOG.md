@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 --
 
+## [0.5.0](https://github.com/pixeldock/RxSwift-Xcode-Templates/releases/tag/v0.5.0)
+_Released on 2017-10-25._
+### Added
+* Xcode 9 support (thanks to [Andrey](https://github.com/gershengoren) for the contribution)
+
+## [0.4.0](https://github.com/pixeldock/RxSwift-Xcode-Templates/releases/tag/v0.4.0)
+_Released on 2017-01-12._
+### Added
+* make properties accessible from extensions
+
 ## [0.3.0](https://github.com/pixeldock/RxSwift-Xcode-Templates/releases/tag/v0.3.0)
 _Released on 2016-09-04._
 
