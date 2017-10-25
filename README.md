@@ -34,3 +34,7 @@ In most cases the ViewModel uses other helper objects (e.g. an APIClient) to acc
 
 5. Click *Next* and save the scene. Xcode now creates the 4 classes needed for the scene.
 
+# Requirements
+
+* Xcode 9 (for prior versions use 0.4.0)
+* Swift 4
