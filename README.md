@@ -14,7 +14,7 @@ Each Scene consists of the following elements:
 
 1.  A **ViewController** (that displays the data from the ViewModel out and sends user input to the ViewModel input using binding in both cases)
 
-2.  A **ViewModel** (that provides the ViewController with displayabe Data by defining one or more transformation chains connecting the input to the output)
+2.  A **ViewModel** (that provides the ViewController with displayable Data by defining one or more transformation chains connecting the input to the output)
 
 3.  A **Router** (that takes care of routing to another scene)
 
