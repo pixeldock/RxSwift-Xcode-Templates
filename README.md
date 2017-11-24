@@ -14,46 +14,51 @@ Each Scene consists of the following elements:
 
 
 ### ViewController
-#### Does
+####  ✅ Does
 - initialize and layout its subviews
 - handle user input (if data needs to be fetched or stored it relays that to the ViewModel)
 - show Displayable Items that are provided by the ViewModel
 
-#### Does Not
+#### ❌ Does Not
 - have any access to API, DataStore, UserDefaults
 - push other ViewControllers or pop itself
 - present other ViewControllers modally
 - show Alerts
 - format Data to be displayable in Views (e.g.  AttributedStrings, DateFormatters)
 
-
+---
 ### ViewModel
-#### Does
+#### ✅ Does
 - fetch data from API
 - fetch / store / update Data from DataStore
 - fetch / store / update Data from UserDefaults
 - format Data to be displayable by the ViewController (e.g. Attributed Strings, DateFormatters)
 
-#### Does Not
+#### ❌ Does Not
 - have any access to UIElements (does not even import UIKit!)
 
+---
+
 ### Router
-#### Does
+####  ✅ Does
 - push other Scenes (if they are should be on the same navigaton stack)
 - generate a `RouteRequest` for Scenes that should be presented by the main `AppRouter`
 
-#### Does Not
+#### ❌ Does Not
 - have any access to UIElements (does not even import UIKit!)
 - have any access to API, DataStore, UserDefaults
 
+---
+
 ### Builder
-#### Does
+####  ✅ Does
 - initialize ViewController, ViewModel and Router
 - provide the ViewController to the outside world (via the `viewController()` method)
 
-#### Does Not
+#### ❌ Does Not
 - do anything else ;-)
 
+---
 
 ![image](http://www.pixeldock.com/img/anatomy-scene.png)
 
