@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 --
 
+## [0.6.0](https://github.com/pixeldock/RxSwift-Xcode-Templates/releases/tag/v0.5.0)
+_Released on 2017-11-24._
+### Added
+* Move all setup methods in ViewController and ViewModel to a private extension
+
 ## [0.5.0](https://github.com/pixeldock/RxSwift-Xcode-Templates/releases/tag/v0.5.0)
 _Released on 2017-10-25._
 ### Added
