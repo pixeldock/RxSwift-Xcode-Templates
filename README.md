@@ -12,15 +12,50 @@ Let's call each "screen" or "view" in the app a **Scene**. So if you have an app
 
 Each Scene consists of the following elements:
 
-1.  A **ViewController** (that displays the data from the ViewModel out and sends user input to the ViewModel input using binding in both cases)
 
-2.  A **ViewModel** (that provides the ViewController with displayable Data by defining one or more transformation chains connecting the input to the output)
+### ViewController
+#### Does
+- initialize and layout its subviews
+- handle user input (if data needs to be fetched or stored it relays that to the ViewModel)
+- show Displayable Items that are provided by the ViewModel
 
-3.  A **Router** (that takes care of routing to another scene)
+#### Does Not
+- have any access to API, DataStore, UserDefaults
+- push other ViewControllers or pop itself
+- present other ViewControllers modally
+- show Alerts
+- format Data to be displayable in Views (e.g.  AttributedStrings, DateFormatters)
 
-4.  A **Builder** (that initializes and connects the Router, ViewModel and ViewController and returns the ViewController)
 
-In most cases the ViewModel uses other helper objects (e.g. an APIClient) to access and mutate the model or download data but those might be shared by multiple Scenes so I don't consider them part of a scene.
+### ViewModel
+#### Does
+- fetch data from API
+- fetch / store / update Data from DataStore
+- fetch / store / update Data from UserDefaults
+- format Data to be displayable by the ViewController (e.g. Attributed Strings, DateFormatters)
+
+#### Does Not
+- have any access to UIElements (does not even import UIKit!)
+
+### Router
+#### Does
+- push other Scenes (if they are should be on the same navigaton stack)
+- generate a `RouteRequest` for Scenes that should be presented by the main `AppRouter`
+
+#### Does Not
+- have any access to UIElements (does not even import UIKit!)
+- have any access to API, DataStore, UserDefaults
+
+### Builder
+#### Does
+- initialize ViewController, ViewModel and Router
+- provide the ViewController to the outside world (via the `viewController()` method)
+
+#### Does Not
+- do anything else ;-)
+
+
+![image](http://www.pixeldock.com/img/anatomy-scene.png)
 
 # How to use it:
 
