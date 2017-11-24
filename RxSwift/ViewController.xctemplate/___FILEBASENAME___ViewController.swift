@@ -32,8 +32,10 @@ class ___VARIABLE_sceneName___ViewController: UIViewController {
         setupLayout()
         setupRx()
     }
+}
 
-    // MARK: Setup
+// MARK: Setup
+private extension ___VARIABLE_sceneName___ViewController {
 
     func setupViews() {
         

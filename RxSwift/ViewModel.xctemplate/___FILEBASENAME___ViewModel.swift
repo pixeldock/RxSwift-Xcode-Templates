@@ -14,13 +14,15 @@ class ___VARIABLE_sceneName___ViewModel {
 
     // output
 
-    // private
+    // internal
 
     init() {
         setupRx()
     }
+}
 
-    // MARK: Setup
+// MARK: Setup
+private extension ___VARIABLE_sceneName___ViewModel {
 
     func setupRx() {
 
