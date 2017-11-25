@@ -8,7 +8,7 @@
 [![Twitter](https://img.shields.io/badge/Twitter-@pixeldock-blue.svg?style=flat)](http://twitter.com/pixeldock)
 
 
-A handful of Xcode file templates for projects that use RXSwift and MVVM
+A handful of Xcode file templates for projects that use RxSwift and MVVM
 
 # What this is about:
 
