@@ -1,6 +1,12 @@
 # RxSwift Xcode file templates
 
 [![GitHub release](https://img.shields.io/github/release/pixeldock/RxSwift-Xcode-Templates.svg)]()
+[![License](https://img.shields.io/badge/License-MIT-gray.svg)](https://opensource.org/licenses/MIT)
+[![Xcode version](https://img.shields.io/badge/Xcode-9.1-green.svg)](https://developer.apple.com/xcode/)
+[![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)](https://developer.apple.com/ios/)
+[![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)](https://swift.org/)
+[![Twitter](https://img.shields.io/badge/Twitter-@pixeldock-blue.svg?style=flat)](http://twitter.com/pixeldock)
+
 
 A handful of Xcode file templates for projects that use RXSwift and MVVM
 
