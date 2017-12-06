@@ -60,6 +60,7 @@ Each Scene consists of the following elements:
 ####  ✅ Does
 - initialize ViewController, ViewModel and Router
 - provide the ViewController to the outside world (via the `viewController()` method)
+- if the Scene needs some initial data it is injected into the Builder who then injects it into the ViewModel
 
 #### ❌ Does Not
 - do anything else ;-)
@@ -68,7 +69,50 @@ Each Scene consists of the following elements:
 
 ![image](http://www.pixeldock.com/img/anatomy-scene.png)
 
-# How to use it:
+## Initializing a new scene
+
+When you want to show a new scene you never initialize any of its components yourself. Always ask the Scene's Builder to provide the Scene's ViewController via its static `viewController()` method:
+
+```
+let nextViewController = NextBuilder.viewController()
+```
+
+If the new Scene needs some initial data you inject it into the new Scene's Builder.
+
+**A simple example:**  
+You have a `CarListScene` that shows a list of cars. When the user taps on a car in the list you want to navigate to a `CarDetailsScene` that shows the details of the selected car. To hand the `carID` to the Details Scene you inject it into the `CarDetailsBuilder`:
+
+```
+class CarListRouter {
+    weak var viewController: CarListViewController?
+
+    func navigateToDetails(withCarID carID: String) {
+        let detailsViewController = CarDetailsBuilder.viewController(withCarID: carID)
+        viewController?.navigationController?.pushViewController(detailsViewController, animated: true)
+    }
+}
+```
+
+The `CarDetailsBuilder` then injects the data into the `CarDetailsViewModel`:
+
+```
+struct CarDetailsBuilder {
+
+    static func viewController(withCarID carID: String) -> UIViewController {
+        let viewModel = CarDetailsViewModel(withCarID: carID)
+        let router = CarDetailsRouter()
+        let viewController = CarDetailsViewController(withViewModel: viewModel, router: router)
+        router.viewController = viewController
+
+        return viewController
+    }
+}
+```
+
+And then the `CarDetailsViewModel` prepares displayable data for the `CarDetailsViewController` as it always does.
+
+
+# How to use the Xcode templates:
 
 1. Download the *RxSwift* folder and add it to the following folder on your machine: `~/Library/Developer/Xcode/Templates` (You might need to create that folder if does not exist yet)
 
